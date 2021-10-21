@@ -38,16 +38,16 @@ let weather = {
         const { icon, description } = data.weather[0];
         const { temp, humidity } = data.main;
         const { speed } = data.wind;
-        document.querySelector(".location").innerText = "Currently in " + name;
+        document.querySelector(".location").innerText = name;
         document.querySelector(".condition-icon").src = "https://openweathermap.org/img/wn/" + icon + ".png";
         document.querySelector(".condition-text").innerText = description;
         document.querySelector(".temperature").innerText = temp + " °F";
-        document.querySelector(".humidity").innerText = "Humidity: " + humidity + "%";
-        document.querySelector(".wind").innerText = "Wind speed: " + speed + " mph";
+        document.querySelector(".humidity").innerText = "Precip: " + humidity + "%";
+        document.querySelector(".wind").innerText = "Wind: " + speed + " mph";
         document.querySelector(".weather").classList.remove("loading");
         document.body.style.backgroundImage = "url('https://source.unsplash.com/1600x900/?" + name + "')";
         document.body.style.backgroundSize = "cover";
-        document.body.style.backgroundPosition = "center center";
+        document.body.style.backgroundPosition = "center";
     },
     search: function() {
         this.fetchWeather(document.querySelector(".search-field").value);
