@@ -232,3 +232,15 @@ h5 {
 .wind {
     font-weight: 400;
 }
+
+@media (max-width: 600px) {
+    .theme-btn {
+        top: .5rem;
+        right: .5rem;
+    }
+    
+    .widget {
+        padding: 1rem;
+        margin: .5rem;
+    }
+}
