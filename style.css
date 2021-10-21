@@ -240,8 +240,7 @@ h5 {
     }
     
     .widget {
-        padding: 1rem;
-        margin: 0 .25rem;
+        padding: 1.5rem 1rem;
         border-radius: .75rem;
     }
 }
