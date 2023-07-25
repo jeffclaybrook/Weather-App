@@ -22,7 +22,7 @@ themeBtn.addEventListener("click", function() {
 });
 
 let weather = {
-    apiKey: "fe24748fb9b03fd8deeae16a9fdb6480",
+    apiKey: "22bd48cca8b35f3a534482166189e512",
     fetchWeather: function (city) {
         fetch(
             "https://api.openweathermap.org/data/2.5/weather?q="
